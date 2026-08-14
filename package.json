@@ -1,0 +1,16 @@
+{
+  "name": "sample-crm",
+  "private": true,
+  "version": "0.0.0",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "pnpm -r build",
+    "typecheck": "pnpm -r typecheck",
+    "lint:fix": "pnpm -r lint:fix",
+    "dev": "pnpm -r --parallel dev",
+    "test": "pnpm -r test"
+  }
+}

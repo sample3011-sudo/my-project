@@ -1,0 +1,39 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pnpm *)",
+      "Bash(git diff *)",
+      "Bash(git status *)",
+      "Bash(git log *)",
+      "Edit(apps/**)",
+      "Edit(packages/**)",
+      "Edit(docs/**)",
+      "Write(apps/**)",
+      "Write(packages/**)",
+      "Write(docs/**)",
+      "Read(**)"
+    ],
+    "deny": [
+      "Bash(git push *)",
+      "Bash(rm -rf *)",
+      "Write(.env*)",
+      "Write(apps/api/src/middleware/auth.middleware.ts)",
+      "Read(./.env)",
+      "Read(./.env.*)",
+      "Read(./secrets/**)"
+    ]
+  },
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node .claude/hooks/auto_format.js"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "lib": ["ES2023", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "jsx": "react-jsx",
+    "moduleResolution": "bundler",
+    "types": ["vite/client", "jest"],
+    "noEmit": true,
+    "baseUrl": ".",
+    "paths": {
+      "@repo/shared": ["../../packages/shared/src"]
+    }
+  },
+  "include": ["src/**/*", "tests/**/*"]
+}
