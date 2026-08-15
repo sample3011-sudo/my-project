@@ -9,7 +9,7 @@ COPY apps/ui/package.json apps/ui/
 COPY packages/shared/package.json packages/shared/
 
 # Install all dependencies
-RUN pnpm install --frozen-lockfile
+RUN pnpm install 
 
 # Copy source files (not node_modules - covered by .dockerignore)
 COPY apps/ui/src apps/ui/src/

@@ -9,7 +9,7 @@ COPY apps/api/package.json apps/api/
 COPY packages/shared/package.json packages/shared/
 
 # Install all dependencies
-RUN pnpm install --frozen-lockfile
+RUN pnpm install 
 
 # Copy source files (not node_modules - covered by .dockerignore)
 COPY apps/api/src apps/api/src/
@@ -34,7 +34,7 @@ COPY --from=builder /app/apps/api/package.json apps/api/
 COPY --from=builder /app/packages/shared/package.json packages/shared/
 
 # Install production dependencies only
-RUN pnpm install --prod --frozen-lockfile
+RUN pnpm install --prod 
 
 # Copy compiled output + prisma schema
 COPY --from=builder /app/packages/shared/dist packages/shared/dist/
