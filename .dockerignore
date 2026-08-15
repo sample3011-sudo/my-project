@@ -1,0 +1,15 @@
+**/node_modules
+**/dist
+**/.env
+**/*.log
+.git
+.gitignore
+.github
+docs
+pipeline
+skills
+.agents
+.claude
+README.md
+AGENTS.md
+CLAUDE.md
