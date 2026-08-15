@@ -1,18 +1,32 @@
 {
-  "extends": "../../tsconfig.base.json",
-  "compilerOptions": {
-    "module": "NodeNext",
-    "moduleResolution": "NodeNext",
-    "lib": ["ES2023"],
-    "types": ["node", "jest"],
-    "outDir": "dist",
-    "resolveJsonModule": true,
-    "esModuleInterop": true,
-    "baseUrl": ".",
-    "paths": {
-      "@repo/shared": ["../../packages/shared/src"]
-    }
-  },
-  "include": ["src/**/*", "tests/**/*"],
-  "exclude": ["node_modules", "dist"]
+    "extends":  "../../tsconfig.base.json",
+    "compilerOptions":  {
+                            "module":  "NodeNext",
+                            "moduleResolution":  "NodeNext",
+                            "lib":  [
+                                        "ES2023"
+                                    ],
+                            "types":  [
+                                          "node",
+                                          "jest"
+                                      ],
+                            "outDir":  "dist",
+                            "resolveJsonModule":  true,
+                            "esModuleInterop":  true,
+                            "baseUrl":  ".",
+                            "paths":  {
+                                          "@repo/shared":  [
+                                                               "../../packages/shared/src"
+                                                           ]
+                                      }
+                        },
+    "include":  [
+                    "src/**/*",
+                    "tests/**/*"
+                ],
+    "exclude":  [
+                    "node_modules",
+                    "dist",
+                    "tests"
+                ]
 }
