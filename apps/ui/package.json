@@ -1,37 +1,39 @@
 {
-  "name": "ui",
-  "version": "1.0.0",
-  "scripts": {
-    "dev": "vite",
-    "build": "tsc --noEmit && vite build",
-    "typecheck": "tsc --noEmit",
-    "lint:fix": "eslint . --fix && prettier --write .",
-    "test": "jest"
-  },
-  "dependencies": {
-    "@repo/shared": "workspace:*",
-    "axios": "^1.7.2",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "react-router-dom": "^6.23.1",
-    "zod": "^3.24.2"
-  },
-  "devDependencies": {
-    "@testing-library/jest-dom": "^6.4.5",
-    "@testing-library/react": "^15.0.7",
-    "@testing-library/user-event": "^14.5.2",
-    "@types/jest": "^29.5.14",
-    "@types/react": "^18.3.3",
-    "@types/react-dom": "^18.3.0",
-    "@vitejs/plugin-react": "^4.3.1",
-    "eslint": "^8.57.1",
-    "eslint-config-prettier": "^9.1.0",
-    "jest": "^30.3.0",
-    "jest-environment-jsdom": "^30.4.1",
-    "prettier": "^3.8.1",
-    "ts-jest": "^29.2.5",
-    "typescript": "^5.4.5",
-    "typescript-eslint": "^8.0.0",
-    "vite": "^5.3.1"
-  }
+    "name":  "ui",
+    "version":  "1.0.0",
+    "scripts":  {
+                    "dev":  "vite",
+                    "build":  "tsc --noEmit \u0026\u0026 vite build",
+                    "typecheck":  "tsc --noEmit",
+                    "lint:fix":  "eslint . --fix \u0026\u0026 prettier --write .",
+                    "test":  "jest"
+                },
+    "dependencies":  {
+                         "@repo/shared":  "workspace:*",
+                         "axios":  "^1.7.2",
+                         "lucide-react":  "^1.30.0",
+                         "react":  "^18.3.1",
+                         "react-dom":  "^18.3.1",
+                         "react-router-dom":  "^6.23.1",
+                         "zod":  "^3.24.2"
+                     },
+    "devDependencies":  {
+                            "@testing-library/jest-dom":  "^6.4.5",
+                            "@testing-library/react":  "^15.0.7",
+                            "@testing-library/user-event":  "^14.5.2",
+                            "@types/jest":  "^29.5.14",
+                            "@types/react":  "^18.3.3",
+                            "@types/react-dom":  "^18.3.0",
+                            "@vitejs/plugin-react":  "^4.3.1",
+                            "eslint":  "^8.57.1",
+                            "eslint-config-prettier":  "^9.1.0",
+                            "jest":  "^30.3.0",
+                            "jest-environment-jsdom":  "^30.4.1",
+                            "prettier":  "^3.8.1",
+                            "ts-jest":  "^29.2.5",
+                            "typescript":  "^5.4.5",
+                            "typescript-eslint":  "^8.0.0",
+                            "vite":  "^5.3.1",
+                            "@types/node":  "^20.14.2"
+                        }
 }
