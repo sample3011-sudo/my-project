@@ -47,4 +47,4 @@ COPY --from=builder /app/node_modules/.pnpm /app/node_modules/.pnpm
 WORKDIR /app/apps/api
 ENV PORT=8080
 EXPOSE 8080
-CMD ["node", "dist/server.js"]
+CMD ["sh", "-c", "if [ -f dist/src/server.js ]; then node dist/src/server.js; else node dist/server.js; fi"]
